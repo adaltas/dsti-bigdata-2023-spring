@@ -14,14 +14,14 @@ For this lab we will be using a very small dataset of NYC taxi drivers.
 
 Using the official [Hive Data Definition Langage](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+DDL):
 
-1. Using the HDFS CLI, take a look at the data used for this lab at `/education/cs_2023_springbda_1/resources/lab4/nyc_drivers/drivers.csv`
+1. Using the HDFS CLI, take a look at the data used for this lab at `/education/dsti_2023_fallbda_1/resources/lab4/nyc_drivers/drivers.csv`
 
 2. Copy the `nyc_drivers` folder to your user directory in HDFS:
 
    ```bash
-   hdfs dfs -mkdir -p "/education/cs_2023_springbda_1/$USER/lab4"
+   hdfs dfs -mkdir -p "/education/dsti_2023_fallbda_1/$USER/lab4"
 
-   hdfs dfs -cp /education/cs_2023_springbda_1/resources/lab4/nyc_drivers "/education/cs_2023_springbda_1/$USER/lab4"
+   hdfs dfs -cp /education/dsti_2023_fallbda_1/resources/lab4/nyc_drivers "/education/dsti_2023_fallbda_1/$USER/lab4"
    ```
 
 3. Open a Beeline session by typing `beeline`
@@ -33,7 +33,7 @@ Using the official [Hive Data Definition Langage](https://cwiki.apache.org/confl
    -- DO NOT USE '.' NOR '-' IN HIVEUSERNAME
    SET hivevar:hiveUsername=p_nom_cs;
 
-   CREATE EXTERNAL TABLE cs_2023_springbda_1.${hiveUsername}_nyc_drivers_ext (
+   CREATE EXTERNAL TABLE dsti_2023_fallbda_1.${hiveUsername}_nyc_drivers_ext (
      driver_id INT,
      -- COMPLETE HERE
    )
@@ -59,7 +59,7 @@ STORED AS ORC;
    2. The column `name` divided into `first_name` and `last_name`
    3. The column `location` renamed as `address` (because `LOCATION` is a Hive keyword)
    4. The column `certified` as a `BOOLEAN`
-2. Check that your table was created using the HDFS CLI at `/warehouse/tablespace/managed/hive/cs_2023_springbda_1.db/${USER}_nyc_drivers` (should be empty)
+2. Check that your table was created using the HDFS CLI at `/warehouse/tablespace/managed/hive/dsti_2023_fallbda_1.db/${USER}_nyc_drivers` (should be empty)
 
 ### Load data from the CSV table to the ORC table
 
@@ -70,4 +70,4 @@ Now we want to populate our ORC table from our CSV table. Using the [Hive Data M
    - Transform `certified` from `STRING` to `BOOLEAN`
    - Rename `location` to `address`
 2. Execute your query
-3. Check what the data looks like in the managed table using the HDFS CLI at `/warehouse/tablespace/managed/hive/cs_2023_springbda_1.db/${username}_nyc_drivers`
+3. Check what the data looks like in the managed table using the HDFS CLI at `/warehouse/tablespace/managed/hive/dsti_2023_fallbda_1.db/${username}_nyc_drivers`

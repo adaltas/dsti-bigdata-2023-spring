@@ -13,7 +13,7 @@
 
 Using the official [HDFS DFS Commands Guide](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html):
 
-1. Create a directory named after your username in your group HDFS directory. E.g. `/education/cs_2023_springbda_1/johndoe`
+1. Create a directory named after your username in your group HDFS directory. E.g. `/education/dsti_2023_fallbda_1/johndoe`
 2. Create a subdirectory `lab2` in the directory created in 1.
 3. Create a file named `sentence1.txt` on the local file system and write a sentence inside that file
 4. Copy the file to your `lab2` HDFS directory
