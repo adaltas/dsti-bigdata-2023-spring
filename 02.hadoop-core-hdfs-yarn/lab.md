@@ -90,11 +90,11 @@ The WordCount example is also located in the MapReduce example JAR. It takes sev
 - 1 or more input directories
 - 1 output directory
 
-1. Look at the content of the input directory we will use: `/education/cs_2023_springbda_1/resources/lab2`
+1. Look at the content of the input directory we will use: `/education/dsti_2023_fallbda_1/resources/lab2`
 2. Run the command:
    ```bash
    yarn jar /usr/hdp/3.1.0.0-78/hadoop-mapreduce/hadoop-mapreduce-examples-3.1.1.3.1.0.0-78.jar \
-    wordcount /education/cs_2023_springbda_1/resources/lab2 \
-    /education/cs_2023_springbda_1/$USER/lab2/output-moby-dick
+    wordcount /education/dsti_2023_fallbda_1/resources/lab2 \
+    /education/dsti_2023_fallbda_1/$USER/lab2/output-moby-dick
    ```
 3. Check out the output directory
