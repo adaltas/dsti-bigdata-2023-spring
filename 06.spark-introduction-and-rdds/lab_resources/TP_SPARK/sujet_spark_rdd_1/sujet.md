@@ -26,7 +26,7 @@ val rdd = sc.textFile("hdfs:///user/<my_user>/monfichier.txt")
 
 2b. Print content of RDD
 
-2c: Filter rdd : delete lines where age is smaller than 18 dont l'age est inférieur à 18
+2c: Filter rdd : delete lines where age is smaller than 18 apa
 
 2d: Convert RDD in dataframe (google est votre ami)
 
