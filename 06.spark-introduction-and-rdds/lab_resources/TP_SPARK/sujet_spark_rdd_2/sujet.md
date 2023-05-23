@@ -1,4 +1,4 @@
-1. Creer un csv:
+1. Create a csv:
 ````
 id,author,genre,quantity
 1,hunter.fields,romance,15
@@ -14,16 +14,13 @@ id,author,genre,quantity
 ```
 =========
 
+2. Load csv into dataframe in Spark
 
+3. Generate number of writes per genre
 
-2. Charger le csv en dataframe dans Spark
+4. Ranking authors per number of written livre:
 
-3. Le nombre d'ecrit par genre
-
-
-4. Ranking number des auteurs par nombre de livre ecrit:
-
-Ex:
+Ex of output:
 ranking,author,genre,quantity
 1,jason.dawson,thriller,90
 2,leonard.lewis,thriller,81
@@ -36,12 +33,12 @@ ranking,author,genre,quantity
 9,hunter.fields,romance,15
 10,josephine.leonard,thriller,1
 
-5. Renommer les noms en version "standard" 'jason.dawson' => 'Jason Dawson'
+5. Rename name in a "standard" way 'jason.dawson' => 'Jason Dawson'
 
 https://sparkbyexamples.com/spark/spark-sql-window-functions/
 
 
-6. Charger l'ensemble suivant
+6. Load following set
 
 val input = Seq(
   ("100","John", Some(35),None),
@@ -68,7 +65,7 @@ scala> input.show
 +---+-----+----+--------+
 
 
-7. fusionner les cellules de meme id:
+7. Merge cells of same id:
 
 scala> solution.show()
 +---+-----+----+--------+
