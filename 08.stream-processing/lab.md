@@ -18,7 +18,7 @@ To stream the NY datasets:
 
 - Go to this directory:
   ```
-  cd ece-spark-2020-fall/labs/lab3
+  cd lab-resources 
   ```
 - Create a checkpoint directory for Spark Streaming in your HDFS personal folder:
   ```bash
