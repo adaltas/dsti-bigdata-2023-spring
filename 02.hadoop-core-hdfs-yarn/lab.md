@@ -65,7 +65,7 @@ The configuration depends on your OS:
      au.adaltas.cloud = AU.ADALTAS.CLOUD
      ipa1.au.adaltas.cloud = AU.ADALTAS.CLOUD
     ```
-
+  - If you are using a recent Ubuntu version : you might have the snap version of Firefox, in this case replace the 2nd line with `default_ccache_name = FILE:/home/<username>/krb5cc_%{uid}` to avoid permission issues (replace `<username>` with the username of your Ubuntu account).
   - After that you can get a Kerberos ticket using `kinit $USER` (same user name that the one used to connect with SSH)
   - Check your ticket with `klist`
   - Add the following properties in your Firefox `about:config` page:
@@ -73,7 +73,6 @@ The configuration depends on your OS:
     network.negotiate-auth.delegation-uris = .au.adaltas.cloud
     network.negotiate-auth.trusted-uris = .au.adaltas.cloud
     ```
-
 - On Windows, the installation is more tricky. Follow this article: [Kerberos and Spnego authentication on Windows with Firefox](https://www.adaltas.com/en/2019/11/04/windows-krb5-client-spnego/).
 
 Once that your computer and your Firefox browser are configured and that you have a Kerberos ticket:
