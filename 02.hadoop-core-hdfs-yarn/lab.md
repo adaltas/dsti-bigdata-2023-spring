@@ -73,6 +73,7 @@ The configuration depends on your OS:
     network.negotiate-auth.delegation-uris = .au.adaltas.cloud
     network.negotiate-auth.trusted-uris = .au.adaltas.cloud
     ```
+
 - On Windows, the installation is more tricky. Follow this article: [Kerberos and Spnego authentication on Windows with Firefox](https://www.adaltas.com/en/2019/11/04/windows-krb5-client-spnego/).
 
 Once that your computer and your Firefox browser are configured and that you have a Kerberos ticket:
