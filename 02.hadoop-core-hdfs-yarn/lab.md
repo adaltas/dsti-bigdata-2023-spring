@@ -65,7 +65,7 @@ The configuration depends on your OS:
      au.adaltas.cloud = AU.ADALTAS.CLOUD
      ipa1.au.adaltas.cloud = AU.ADALTAS.CLOUD
     ```
-
+  - If you are using a recent Ubuntu version : you might have the snap version of Firefox, in this case replace the 2nd line with `default_ccache_name = FILE:/home/<username>/krb5cc_%{uid}` to avoid permission issues (replace `<username>` with the username of your Ubuntu account).
   - After that you can get a Kerberos ticket using `kinit $USER` (same user name that the one used to connect with SSH)
   - Check your ticket with `klist`
   - Add the following properties in your Firefox `about:config` page:
